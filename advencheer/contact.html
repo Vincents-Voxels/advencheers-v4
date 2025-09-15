@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AdvenCheers Travel</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="stylesheet" href="/contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    
+    <!-- GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">AdvenCheers</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#destinations">Destinations</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="#contact" class="active">Contact</a></li>
+            </ul>
+            <a href="index.html#book" class="book-now">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- Parallax Header Section -->
+    <section class="parallax-hero">
+        <div class="scrollDist"></div>
+        <main class="parallax-main">
+            <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+                <mask id="m">
+                    <g class="cloud1">
+                        <rect fill="#fff" width="100%" height="801" y="799" />
+                        <image xlink:href="https://assets.codepen.io/721952/cloud1Mask.jpg" width="1200" height="800"/>
+                    </g>
+                </mask>
+                
+                <image class="sky" xlink:href="https://assets.codepen.io/721952/sky.jpg" width="1200" height="590" />
+                <image class="mountBg" xlink:href="https://assets.codepen.io/721952/mountBg.png" width="1200" height="800"/>    
+                <image class="mountMg" xlink:href="https://assets.codepen.io/721952/mountMg.png" width="1200" height="800"/>    
+                <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
+                <image class="mountFg" xlink:href="https://assets.codepen.io/721952/mountFg.png" width="1200" height="800"/>
+                <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
+                <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
+                <text fill="#fff" x="350" y="200" class="parallax-text">CONTACT</text>
+                <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
+                
+                <g mask="url(#m)">
+                    <rect fill="#fff" width="100%" height="100%" />      
+                    <text x="350" y="200" fill="#162a43" class="parallax-text">US</text>
+                </g>
+                
+                <rect id="arrow-btn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
+            </svg>
+        </main>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <!-- Contact Header -->
+            <div class="contact-header">
+                <h1>Get in Touch</h1>
+                <p>Ready to embark on your next adventure? We'd love to hear from you! Whether you have questions about our destinations, need help planning your perfect trip, or want to share your travel dreams, our team is here to help.</p>
+            </div>
+
+            <!-- Contact Content Grid -->
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Let's Start Planning</h2>
+                    <p>Our travel experts are standing by to help you create unforgettable memories. Reach out to us through any of the methods below:</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Call Us</h3>
+                                <p>1-800-ADVENCHEERS</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Email Us</h3>
+                                <p>Vincent@autochatter.me</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>YouTube</h3>
+                                <p>@Vdottravels</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>TikTok</h3>
+                                <p>@Vdottravels</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="additional-info">
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure & Private</h3>
+                        <p>Your information is protected with industry-standard security measures and will never be shared with third parties.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Quick Response</h3>
+                        <p>We typically respond to all inquiries within 24 hours, often much sooner during business hours.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Personal Touch</h3>
+                        <p>Every inquiry receives personal attention from our experienced travel consultants who care about your journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia Pacific</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Americas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Booking Terms</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>1-800-ADVENCHEERS</li>
+                        <li>info@advencheers.com</li>
+                        <li>123 Travel Lane</li>
+                        <li>Adventure City, AC 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AdvenCheers Travel. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/contact.js"></script>
+</body>
+</html>
